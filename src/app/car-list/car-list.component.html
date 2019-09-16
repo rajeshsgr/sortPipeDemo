@@ -1,0 +1,20 @@
+
+<div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+              List with Sort Pipe
+            <ul class="list-group">
+              <li
+                class="list-group-item"
+                *ngFor="let car of carList | sort">
+                <span
+                  class="badge">
+                  {{ car.year }}
+                </span>
+                <strong>{{ car.model }}</strong> | {{ car.price | currency }} 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
